@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ThingDef Class="Plague.ThingDef_PlagueBullet" ParentName="BaseBullet">
+  <ThingDef Class="PlagueGun.ThingDef_PlagueBullet" ParentName="BaseBullet">
     <defName>Booty_Plague_Bullet_Revolver</defName>
     <label>plague bullet</label>
     <graphicData>
@@ -15,8 +15,11 @@
     </projectile>
 	<AddHediffChance>0.05</AddHediffChance>
 	<HediffToAdd>Plague</HediffToAdd>
-	<thingClass>Plague.Projectile_PlagueBullet</thingClass>
+	<thingClass>PlagueGun.Projectile_PlagueBullet</thingClass>
   </ThingDef>
+
+<defName>TST_PlagueGun_Weapon</defName>
+<label>plague gun</label>
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Booty_Plague_Gun_Revolver</defName>
