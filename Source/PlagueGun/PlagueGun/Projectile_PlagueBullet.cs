@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using Verse;
 
-namespace Plague
+namespace AJ.PlagueGun
 {
     public class Projectile_PlagueBullet : Bullet
     {
@@ -46,7 +46,7 @@ namespace Plague
                      * the localization section.
                      */
                     
-                    Messages.Message("TST_PlagueBullet_SuccessMessage".Translate(new object[] {
+                    Messages.Message("PlagueBullet_SuccessMessage".Translate(new object[] {
                         this.launcher.Label, hitPawn.Label
                     }), MessageTypeDefOf.NegativeHealthEvent);
 
@@ -75,7 +75,7 @@ namespace Plague
                      * Dust plumes, symbol bubbles, and text messages floating next to characters.
                      * This mote makes a small text message next to the character.
                      */
-                    MoteMaker.ThrowText(hitThing.PositionHeld.ToVector3(), hitThing.MapHeld, "TST_PlagueBullet_FailureMote".Translate(Def.AddHediffChance), 12f);
+                    MoteMaker.ThrowText(hitThing.PositionHeld.ToVector3(), hitThing.MapHeld, "PlagueBullet_FailureMote".Translate(Def.AddHediffChance), 12f);
                 }
             }
         }

@@ -5,7 +5,7 @@ using System.Text;
 using RimWorld;
 using Verse;
 
-namespace Plague
+namespace AJ.PlagueGun
 {
     public class ThingDef_PlagueBullet : ThingDef
     {
